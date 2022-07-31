@@ -15,6 +15,7 @@ const ModalPortal = ({ children }: ModalPortalProps) => {
   const clickBackdrop = (event: MouseEvent<HTMLDivElement>) => {
     const { target, currentTarget } = event;
     if (target !== currentTarget) return;
+
     closeModal();
   };
 
